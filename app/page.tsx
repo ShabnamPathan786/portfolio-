@@ -8,63 +8,50 @@ import Link from "next/link";
 
 export default function Home() {
   const coreSkills = [
-    "TypeScript", "Rust", "React", "Next.js", "Anchor", "Solana", "Node.js", "Docker"
+    "JavaScript",
+    "React",
+    "Java",
+    "Spring Boot",
+    "MongoDB",
+    "REST APIs",
+    "MySQL",
+    "WebSocket"
   ];
 
   const projects = [
     {
-      title: "RaffleDrop",
-      description: "RaffleDrop is a decentralized raffle marketplace where sellers list items and buyers enter with small fees for a chance to win. Once enough players join, Switchboard randomness picks a winner — the seller gets paid, and one lucky buyer gets the product at a fraction of the price.",
-      github: "https://github.com/dvansari65/RaffleDrop",
-      image: "/assets/raffledrop.png",
-      tags: ["Solana", "Anchor", "Next.js"]
+      title: "Employee Management System",
+      description: "A full-stack web application built using Spring Boot and React for managing employee records efficiently. Features include CRUD operations, role-based access control, RESTful APIs, and secure authentication using JWT. Designed with clean architecture and optimized database queries for scalability.",
+      github: "https://github.com/ShabnamPathan786/Employee-Managment-System",
+      image: "/assets/employee.png",
+      tags: ["Java", "Spring Boot", "React", "MySQL", "JWT"]
     },
     {
-      title: "Decentralised Orderbook",
-      description: "A modular Solana DEX with an on-chain orderbook, built with Anchor and Next.js, featuring real-time order matching, event queue, and off-chain indexing for high-performance trading.",
-      github: "https://github.com/dvansari65/dex_orderbook",
-      image: "/assets/dex_orderbook.svg",
-      tags: ["Solana", "Anchor", "TypeScript"]
+      title: "Personalized Cognitive Digital Twin",
+      description: "AI-powered healthcare assistant designed for dementia patients that learns their daily routines, preferences, and communication patterns. Built with Spring Boot, React, and MongoDB, it uses intelligent memory retrieval to provide personalized reminders, familiar conversations, and cognitive support tailored to each patient's unique needs.",
+      github: "https://github.com/ShabnamPathan786/Personalized_cognitive_digital_twin-",
+      image: "/assets/digitaltwin.png",
+      tags: ["Spring Boot", "React", "MongoDB", "Healthcare AI", "LLM"]
     },
     {
-      title: "Indexer",
-      description: "A DEX orderbook indexer is a backend service that listens to smart contract events and converts on-chain order and trade data into a structured database. It maintains a real-time orderbook and provides fast APIs for efficient frontend queries.",
-      github: "https://github.com/dvansari65/dex_orderbook",
-      image: "/assets/indexer.png",
-      tags: ["Socket.io", "Typescript", "Prisma"]
-    },
-    {
-      title: "Crashed",
-      description: "A modern, real-time crash-style gambling game built on Solana with provably fair gaming mechanics. Time your exit before the multiplier crashes!",
-      github: "https://github.com/dvansari65/crashed",
-      image: "/assets/crashed.png",
-      tags: ["Solana", "Anchor", "Next.js"]
-    },
-    {
-      title: "CancelCourt",
-      description: "A playful, on-chain protocol where users anonymously submit cases (trends, behaviors, influencers, brands) for the community to vote on—should it be canceled or redeemed? Built on Solana for Gen Z's love of social commentary, irony, and collective action.",
-      github: "https://github.com/dvansari65/cencelcourt",
-      image: "",
-      tags: ["Solana", "Anchor", "React"]
-    },
-  ];
-
-  const contributions = [
-    {
-      title: "txtx/Surfpool",
-      description: "Contributed to txtx Surfpool which is solana local developement",
-      fix: "Improved error handling",
-      github: "https://github.com/txtx/surfpool/pull/489"
+      title: "Real-Time Chat Application",
+      description: "A real-time messaging application supporting instant communication between users. Implemented using Spring Boot with WebSocket for live messaging and React for a dynamic frontend interface. Includes user authentication and message persistence.",
+      github: "https://github.com/ShabnamPathan786/Real-Time-Chat-App",
+      image: "/assets/chatapp.png",
+      tags: ["Java", "Spring Boot", "WebSocket", "React"]
     }
   ];
 
+
+
   const experience = [
     {
-      role: "Blockchain Developer",
-      company: "Freelance",
+      role: "Java Full Stack Developer",
+      company: "Personal Projects",
       period: "2023 - Present",
-      description: "Building decentralized applications on Solana, focusing on DeFi protocols, NFT marketplaces, and on-chain gaming experiences.",
-      highlights: ["Smart contract development", "Full-stack dApp architecture", "Protocol design"]
+      description: "Developed full-stack web applications using Spring Boot and React. Designed REST APIs, implemented authentication, and optimized database queries for scalable performance.",
+      highlights: ["REST API Development", "JWT Authentication", "Database Design"]
+
     }
   ];
 
@@ -76,20 +63,20 @@ export default function Home() {
           <div className="flex items-start gap-4">
             <Image
               className="rounded-[3px] shrink-0"
-              src="/assets/luffy.jpg"
-              width={80}
-              height={80}
+              src="/assets/luffy.png"
+              width={82}
+              height={82}
               alt="avatar"
             />
 
             <div className="flex flex-col justify-start min-h-[64px]">
               <span className="text-4xl font-winky animate-fade-up text-secondary">
-                Danish Ansari
+                Shabnam Pathan
               </span>
 
               <div className="h-[32px]">
                 <div className="text-primary font-winky text-2xl animate-fade-in-stable">
-                  Solana Full Stack Developer
+                  Java Full Stack Developer
                 </div>
               </div>
             </div>
@@ -108,10 +95,8 @@ export default function Home() {
               <div className="flex-1">
                 <h2 className="text-xl font-medium text-primary mb-3">About</h2>
                 <p className="text-secondary/90 leading-relaxed">
-                  Full-stack developer specializing in Solana blockchain development. 
-                  I build scalable, performant decentralized applications with a focus on 
-                  user experience and clean architecture. Passionate about DeFi, on-chain gaming, 
-                  and pushing the boundaries of what's possible on Solana.
+                  Full-stack developer specializing in Java-based application development.
+                  I build scalable, high-performance web applications with a focus on clean architecture, efficient backend systems, and intuitive user experiences. Passionate about building robust REST APIs, modern frontend interfaces, and delivering end-to-end solutions using technologies like Spring Boot, React, and relational databases. Always eager to learn and implement industry best practices in full-stack development.
                 </p>
               </div>
             </div>
@@ -125,7 +110,7 @@ export default function Home() {
               Core Skills
             </h2>
             <p className="text-secondary text-lg">
-              Specialized in modern web3 development with expertise across the full stack
+              Specialized in full-stack development with expertise in building scalable enterprise applications
             </p>
           </div>
 
@@ -176,7 +161,7 @@ export default function Home() {
                         group-hover:bg-accent/15 transition-colors duration-300">
                     <Briefcase className="w-5 h-5 text-accent" />
                   </div>
-                  
+
                   <div className="flex-1">
                     <div className="flex items-start justify-between gap-4 mb-2">
                       <div>
@@ -236,23 +221,24 @@ export default function Home() {
                   <div
                     className="
                       relative
-                      w-full sm:w-64
-                      aspect-[16/10]
+                      w-full sm:w-80
+                      h-37
                       shrink-0
                       rounded-md
                       border border-secondary/10
                       bg-secondary/5
                       overflow-hidden
+                      flex items-center justify-center
                     "
                   >
                     {project.image ? (
                       <Image
                         src={project.image}
                         alt={project.title}
-                        fill
-                        sizes="(max-width: 640px) 100vw, 256px"
+                        width={320}
+                        height={192}
                         className="
-                          w-full h-full
+                          max-w-full max-h-full
                           object-contain
                           group-hover:scale-105
                           transition-transform duration-500
@@ -319,61 +305,6 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Contributions Section */}
-        <section className="w-full max-w-3xl animate-fade-up mt-8">
-          <div className="mb-8">
-            <h2 className="text-3xl font-medium text-primary mb-3 pb-3 border-b border-secondary/30">
-              Open Source Contributions
-            </h2>
-            <p className="text-secondary text-lg">
-              Contributing to the Solana ecosystem
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 gap-4">
-            {contributions.map((contribution, index) => (
-              <div
-                key={index}
-                className="group relative border border-secondary/20 rounded-lg 
-                 bg-gradient-to-br from-secondary/5 to-transparent
-                 hover:border-accent/30 hover:from-secondary/10
-                 transition-all duration-300
-                 hover:shadow-lg hover:shadow-accent/5
-                 p-5"
-              >
-                <div className="flex items-start justify-between gap-4">
-                  <div className="flex-1">
-                    <h3 className="text-lg font-medium text-primary group-hover:text-accent 
-                         transition-colors duration-300 mb-1">
-                      {contribution.title}
-                    </h3>
-                    <p className="text-secondary/80 text-sm mb-2">
-                      {contribution.description}
-                    </p>
-                    <span className="inline-flex items-center gap-1.5 px-2.5 py-1 text-xs 
-                         rounded-full bg-accent/10 text-accent border border-accent/20">
-                      <ExternalLink className="w-3 h-3" />
-                      {contribution.fix}
-                    </span>
-                  </div>
-                  <Link
-                    href={contribution.github}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="shrink-0 p-2 rounded-md border border-secondary/20 
-                         hover:border-accent/50 hover:bg-accent/5
-                         transition-all duration-200 group/icon"
-                    aria-label={`View ${contribution.title} contribution`}
-                  >
-                    <Github className="w-4 h-4 text-secondary group-hover/icon:text-accent 
-                           transition-colors" />
-                  </Link>
-                </div>
-              </div>
-            ))}
-          </div>
-        </section>
-
         {/* Contact Section */}
         <section className="w-full max-w-3xl animate-fade-up mt-8 mb-12">
           <div className="mb-8">
@@ -387,7 +318,7 @@ export default function Home() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <Link
-              href="mailto:your.email@example.com"
+              href="mailto:spathan6634@gmail.com"
               className="group relative border border-secondary/20 rounded-lg p-5
                 bg-gradient-to-br from-secondary/5 to-transparent
                 hover:border-accent/30 hover:from-secondary/10
@@ -404,14 +335,14 @@ export default function Home() {
                   <div className="text-sm text-secondary/60 mb-1">Email</div>
                   <div className="text-primary font-medium group-hover:text-accent 
                        transition-colors duration-300">
-                    dvansari360@gmail.com
+                    spathan6634@gmail.com
                   </div>
                 </div>
               </div>
             </Link>
 
             <Link
-              href="https://github.com/dvansari65"
+              href="https://github.com/ShabnamPathan786"
               target="_blank"
               rel="noopener noreferrer"
               className="group relative border border-secondary/20 rounded-lg p-5
@@ -430,7 +361,7 @@ export default function Home() {
                   <div className="text-sm text-secondary/60 mb-1">GitHub</div>
                   <div className="text-primary font-medium group-hover:text-accent 
                        transition-colors duration-300">
-                    @dvansari65
+                    @ShabnamPathan786
                   </div>
                 </div>
               </div>
@@ -447,8 +378,7 @@ export default function Home() {
               <div>
                 <h3 className="text-primary font-medium mb-2">Available for Work</h3>
                 <p className="text-secondary/80 text-sm leading-relaxed">
-                  I'm currently open to freelance projects and full-time opportunities 
-                  in the web3 space. Let's discuss how we can work together.
+                  I'm actively seeking full-time opportunities as a Java Full Stack Developer. If you're looking for someone who can build robust backend systems and modern, user-focused web applications, let's connect.
                 </p>
               </div>
             </div>
